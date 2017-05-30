@@ -8,28 +8,27 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class SaveFeedViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-        var newsArray:[News] = []
+    var newsArray:[News] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableview()
         setupTableViewDummyData()
     }
     func setupTableview(){
-         self.tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
+        self.tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
     }
     func setupTableViewDummyData(){
         var news:News = News(title: "IOS", description: "Error lets stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "คฑาวุธ", view: 2, createDate: "30/05/2560", myTypeNews: "แผนกขาย")
         var news2:News = News(title: "Android", description: "5555+", iconImage: #imageLiteral(resourceName: "cat"), author: "แจ๊ค", view: 5, createDate: "30/05/2560", myTypeNews: "แผนกขนส่ง")
-        newsArray.append(news)                                                                                                     
+        newsArray.append(news)
         newsArray.append(news2)
-        newsArray.append(news2)
-        newsArray.append(news2)
+
     }
     
     
- 
+    
     
     
     
@@ -43,15 +42,15 @@ class FeedViewController: UIViewController {
     }
     
 }
-    
-    
-    
-    
-    
-    
-    
-    
-extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
+
+
+
+
+
+
+
+
+extension SaveFeedViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -67,7 +66,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
         
         var news:News = newsArray[rowNo]
         cell.setupUI(news:news)
-              return cell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
