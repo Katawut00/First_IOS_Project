@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="MyFirstProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-On-78o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_512" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-uS-rKn">
+                                <rect key="frame" x="20" y="19" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h2I-uS-rKn" secondAttribute="height" multiplier="1:1" id="J3U-3T-xPD"/>
+                                    <constraint firstAttribute="width" constant="60" id="wf5-dR-UaA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkC-Kl-xFn">
+                                <rect key="frame" x="100" y="19" width="51.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-PE-EK5">
+                                <rect key="frame" x="100" y="45" width="171.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katawut * 299 views * 30/06/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaz-w1-cYD">
+                                <rect key="frame" x="100" y="68" width="209" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-Nz-CAF">
+                                <rect key="frame" x="281" y="8" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="a0K-Nz-CAF" secondAttribute="bottom" constant="70.5" id="0ah-pH-yyr"/>
+                            <constraint firstItem="Oaz-w1-cYD" firstAttribute="leading" secondItem="pI6-PE-EK5" secondAttribute="leading" id="2Xi-qF-8ns"/>
+                            <constraint firstItem="pI6-PE-EK5" firstAttribute="leading" secondItem="gkC-Kl-xFn" secondAttribute="leading" id="89h-UH-GSZ"/>
+                            <constraint firstItem="gkC-Kl-xFn" firstAttribute="top" secondItem="h2I-uS-rKn" secondAttribute="top" id="9o9-pN-mlP"/>
+                            <constraint firstItem="a0K-Nz-CAF" firstAttribute="top" secondItem="rVU-On-78o" secondAttribute="top" constant="8" id="DIO-R1-K0U"/>
+                            <constraint firstItem="h2I-uS-rKn" firstAttribute="leading" secondItem="rVU-On-78o" secondAttribute="leading" constant="20" id="LhO-EI-pZu"/>
+                            <constraint firstItem="pI6-PE-EK5" firstAttribute="top" secondItem="gkC-Kl-xFn" secondAttribute="bottom" constant="5" id="MTw-HJ-2ua"/>
+                            <constraint firstItem="gkC-Kl-xFn" firstAttribute="leading" secondItem="h2I-uS-rKn" secondAttribute="trailing" constant="20" id="SXE-31-vJh"/>
+                            <constraint firstItem="Oaz-w1-cYD" firstAttribute="top" secondItem="pI6-PE-EK5" secondAttribute="bottom" constant="5" id="Y4n-4b-2Rl"/>
+                            <constraint firstAttribute="trailing" secondItem="a0K-Nz-CAF" secondAttribute="trailing" constant="10" id="gSC-tk-G1X"/>
+                            <constraint firstItem="h2I-uS-rKn" firstAttribute="centerY" secondItem="rVU-On-78o" secondAttribute="centerY" id="tDH-Pf-xNc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rVU-On-78o" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="MHt-WX-8Tu"/>
+                    <constraint firstItem="rVU-On-78o" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MY0-eg-CdO"/>
+                    <constraint firstItem="rVU-On-78o" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iaN-1i-oXT"/>
+                    <constraint firstItem="rVU-On-78o" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="oEC-hi-d7g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accessoryLabel" destination="Oaz-w1-cYD" id="EtL-wl-dn0"/>
+                <outlet property="descriptionLabel" destination="pI6-PE-EK5" id="j74-mB-tIn"/>
+                <outlet property="iconimgView" destination="h2I-uS-rKn" id="8Ad-iv-8aa"/>
+                <outlet property="myTypeNews" destination="a0K-Nz-CAF" id="KY7-k9-wn6"/>
+                <outlet property="titleLabel" destination="gkC-Kl-xFn" id="Sr4-yl-8Ja"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="github_512" width="170" height="170"/>
+    </resources>
+</document>
